@@ -1,0 +1,254 @@
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: brown;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: bisque;
+    text-align: center;
+}
+
+dt {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: brown;
+
+}
+
+dd {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+input {
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    box-shadow: #666;
+    border-radius: 4px;
+}
+
+/* #img{
+    width: 200px;
+    height: 420px;
+    display: inline;
+    margin: 0px auto;
+
+
+} */
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+}
+
+ol {
+    max-width: fit-content;
+    margin: auto;
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+ul {
+    max-width: fit-content;
+    margin: auto;
+    text-align: start;
+
+}
+
+pre{
+width: fit-content;
+background-color: rgb(194, 194, 194);
+text-align: center;
+margin: auto;
+padding: 20px;
+line-height: 30px;}
+
+#img1 {
+    width: 200px;
+    height: 420px;
+}
+
+#img2 {
+    width: 200px;
+    height: 420px;
+}
+
+#img3 {
+    width: 200px;
+    height: 420px;
+}
+
+#img4 {
+    width: 200px;
+    height: 420px;
+}
+
+#img5 {
+    width: 200px;
+    height: 420px;
+}
+
+form {
+    text-align: center;
+    line-height: 30px;
+}
+
+fieldset {
+    max-width: fit-content;
+    margin: auto;
+    display: inline;
+    border: 2px solid green;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#fieldset1 {
+    max-width: fit-content;
+    margin: auto;
+    display: inline;
+    height: 470px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #666;
+    border-color: brown;
+    background-color: #C6FFDD;
+    margin-right: 10px;
+
+}
+
+#fieldset2 {
+    max-width: fit-content;
+    margin: auto;
+    display: inline;
+    border-color: brown;
+    background-color: #C6FFDD;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #666;
+    margin-left: 10px;
+
+
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    background-color: brown;
+    height: 500px;
+    margin-top: 40px;
+}
+#footerlist{
+    color: white;
+    display: flex;
+    margin: start;
+    text-align: center;
+
+}
+.address{
+    color: white;
+}
+#payment{
+    margin-top: 30px;
+
+}
+li{
+    margin-top: 40px;
+    padding-right: 30px;
+}
+h6{
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+#copyright {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+div {
+    width: 300px;
+    margin: auto;
+  }
+  
+  p {
+    border-top: 2px dashed;
+    border-color: brown !important;
+    margin:0; padding: 30px;
+    counter-increment: section;
+    position: relative;
+  }
+  
+  
+  
+  p:nth-child(even):before {
+    content: counter(section);
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: brown;
+    text-align:center;
+    color: white;
+    font-size: 110%;
+  }
+  
+  p:nth-child(odd):before {
+    content: counter(section);
+    left: 100%; 
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: brown;
+    text-align:center;
+    color: white;
+    font-size: 110%;
+  }
+  
+  
+  
+  p:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px; 
+    padding-right: 0;
+  }
+  
+  p:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px; 
+    padding-left: 0;
+  }
+  
+  p:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+  }
+  
+  p:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }

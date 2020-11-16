@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PlusOne</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Plus One Website</h1>
+    <form>
+        <fieldset id="fieldset1">
+            <legend>Login Form</legend>
+            <label>Your username</label>
+            <input type="text"><br>
+
+            <label>Your Password</label>
+            <input type="password"><br>
+
+            <input type="checkbox">Remember Me</input><br>
+            <input type="submit" value="Login">
+        </fieldset>
+        <fieldset id="fieldset2">
+            <legend>Registration Form</legend>
+
+            <label>Enter your Full Name</label>
+            <input type="text"><br>
+
+            <label>Enter your Email Address</label>
+            <input type="email"><br>
+
+            <label>Enter your phone</label>
+            <input type="number"><br>
+
+            <label>Enter your password</label>
+            <input type="password"><br>
+
+            <label>Leave your message below</label>
+            <textarea placeholder="your message..."></textarea><br>
+            <select id="cars" name="cars">
+                <option>Egypt</option>
+                <option>Algeria</option>
+                <option>Tunisia</option>
+                <option>Morocco</option>
+                <option>UAE</option>
+                <option>Saudi Arabia</option>
+            </select>
+            <br>
+            <input type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="Female">Female
+            <br>
+            <input type="submit" value="Register"></input>
+        </fieldset>
+    </form>
+
+    <dt>Describtion</dt>
+    <dd>With this app, you can log in with google or create a new account, and enjoy with two sections, one for the entertainment and the other for the tools:    </dd>
+
+    <h3>Entertainment Section</h3>
+
+    <ol>
+        <p>
+            Chat App: you can chat with others in real-time and upload photos.
+        </p>
+        <p>
+            Connect 3 Game: you can play the connect 3 game with your friends.
+        </p>
+        <p>
+            Media Player: you can play and run some music and enjoy watching videos.
+        </p>
+        <p>
+            Dog or Cat Quiz: you can run a quiz to detect if you are acting like Dog or cat.
+        </p>
+    </ol>
+
+    <img id="img1"  src="images/login.png" alt="login">
+    <img id="img2" src="images/chat.png" alt="chat">
+    <img id="img3" src="images/connect3.png" alt="connect3">
+    <img id="img4" src="images/music.png" alt="music">
+    <img id="img5" src="images/dogOrCatQuiz.png" alt="dogOrCatQuiz">
+
+
+<h3>Tools Section</h3>
+
+<ol>
+    <p>
+        Calculator: you can do simple operations like Sum, sub, multiplication, and division.
+    </p>
+    <p>
+        Temperature Converter: you can convert degrees from or to celsius and Fahrenheit.
+    </p>
+    <p>
+        Java T Point website: you surf the java point website and study programming language through it.
+    </p>
+    <p>
+        Google Maps: you can get your current location through google map.
+    </p>
+    <p>
+        Mobile Track PDF : you can learn the mobile development fundementals.
+    </p>
+</ol>
+
+    <img id="img1" src="images/calculator.png" alt="calculator">
+    <img id="img2" src="images/temperatureConverter.png" alt="temperatureConverter">
+    <img id="img3" src="images/JavaTpoint.png" alt="JavaTpoint">
+    <img id="img4" src="images/GoogleMaps.png" alt="GoogleMaps">
+    <img id="img5" src="images/PDF.png" alt="PDF">
+
+<h3>Features i Used</h3>
+
+<ul>
+    <p>
+        App is written solely in the Java programming language.
+    </p>
+    <p>
+        Android Studio version 4.1.0
+    </p>
+    <p>
+        Gradle version 6.5
+    </p>
+    <p>
+        Current Location with Google Maps API.
+    </p>
+    <p>
+        Firebase Authentication
+    </p>
+    <p>
+        Firebase Database
+    </p>
+    <p>
+        Firebase Storage
+    </p>
+    <p>
+        Adding UI Widget
+    </p>
+    <p>
+        Java language will be used for development in all this designs
+    </p>
+    <p>
+        All versions of gradle and android studio are stable.
+    </p>
+</ul>
+
+<h3>Dependencies i used</h3>
+<pre >
+    dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"]) 
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    // sdp lib
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    //Material
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.media:media:1.2.0'
+    //MultiDex
+    implementation 'com.android.support:multidex:1.0.3'
+    //Exo Player
+    implementation 'com.google.android.exoplayer:exoplayer:2.12.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.12.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.12.0'
+    //GoogleMaps
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    //PDF Viewer
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    //Firebase
+    implementation 'com.google.firebase:firebase-database:19.5.1'  //Firebase database
+    implementation 'com.google.firebase:firebase-auth:20.0.0' //Firebase authentication
+    implementation 'com.firebaseui:firebase-ui-database:6.4.0' //Firebase ui database
+    implementation 'com.google.firebase:firebase-storage'    //Firebase Storage
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+
+    // Declare the dependency for the Cloud Storage library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //Rounded Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //Google Authentication
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    //Design
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-core-ui:28.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'}</pre>
+</body>
+<footer>
+    <ul id="footerlist">
+        <li>
+            Home
+        </li>
+        <li>
+            Contact Us
+        </li>
+        <li>
+            About Us
+        </li>
+       
+        <li>
+            Address
+        </li>
+    </ul>
+    <img id="payment" src="images/paymentMethods.png" alt="Payment methods" width="800" height="200">
+    <div class="address">
+        <h5>363 T ,Pyramids-gardens, Giza, Egypt</h5>
+        <h5>ieslammedhat@gmail.com</h5>
+        <h5>+201208800586</h5>
+
+    </div>
+     <h6 id="copyright" >&copy; YAT Center Learning جميع الحقوق محفوظة لدي </h6>
+</footer>
+</html>
